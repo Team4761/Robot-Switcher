@@ -4,15 +4,17 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 public class Switcher {
 	
-	@SuppressWarnings("deprecation")
 	public int getRobot(){
-		int currentRobot = SmartDashboard.getInt("RobotNumber");
+		int currentRobot = (int) SmartDashboard.getNumber("RobotNumber");
 		return currentRobot;
 	}
 	
-	@SuppressWarnings("deprecation")
 	public void initRobotNumber(){
-		SmartDashboard.putInt("RobotNumber", 0);
+		SmartDashboard.putNumber("RobotNumber", 0);
 	}	
+	
+	public static void main(String[] args){
+		
+	}
 	
 }
