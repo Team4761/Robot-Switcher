@@ -10,6 +10,7 @@ public class Switcher {
 		return currentRobot;
 	}
 	
+	@SuppressWarnings("deprecation")
 	public void initRobotNumber(){
 		SmartDashboard.putInt("RobotNumber", 0);
 	}	
