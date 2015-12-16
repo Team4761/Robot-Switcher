@@ -3,18 +3,19 @@ package org.robockets.robotswitcher;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 public class Switcher {
+	public int currentRobot;
+	
+	public Switcher(){
+		currentRobot = getRobot();
+	}
 	
 	public int getRobot(){
-		int currentRobot = (int) SmartDashboard.getNumber("RobotNumber");
+		currentRobot = (int) SmartDashboard.getNumber("RobotNumber");
 		return currentRobot;
 	}
 	
 	public void initRobotNumber(){
-		SmartDashboard.putNumber("RobotNumber", 0);
+		SmartDashboard.putNumber("RobotNumber", 0); //TEMP
 	}	
-	
-	public static void main(String[] args){
-		
-	}
 	
 }
