@@ -25,7 +25,7 @@ public class Switcher {
 		try{
 		currentRobot = getRobot();
 		}catch(DoesNotExistException e){
-			e.printStackTrace();
+			System.out.println("SmartDashboard field does not exist! Run initRobotNumber()");
 		}
 	}
 	
