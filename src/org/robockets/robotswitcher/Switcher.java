@@ -19,16 +19,21 @@ public class Switcher {
 	/** Holds the value of the SmartDashboard field*/
 	public int currentRobot;
 	
+	
 	/** Initializes the currentRobot field*/
 	public Switcher() {
+		try{
 		currentRobot = getRobot();
+		}catch(DoesNotExistException e){
+			e.printStackTrace();
+		}
 	}
 	
 	/**
 	 * Stores the value of the field in SmartDashboard in currentRobot
 	 * @return The value of currentRobot
 	 */
-	public int getRobot() {
+	public int getRobot() throws DoesNotExistException{
 		currentRobot = (int) SmartDashboard.getNumber("RobotNumber");
 		return currentRobot;
 	}
