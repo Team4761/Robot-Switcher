@@ -32,6 +32,7 @@ public class Switcher {
 	/**
 	 * Stores the value of the field in SmartDashboard in currentRobot
 	 * @return The value of currentRobot
+	 * @throws DoesNotExistException Thrown if field on SmartDashboard does not exist
 	 */
 	public int getRobot() throws DoesNotExistException{
 		currentRobot = (int) SmartDashboard.getNumber("RobotNumber");
