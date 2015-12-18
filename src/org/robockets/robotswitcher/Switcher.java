@@ -4,23 +4,20 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 /** Used to get and initialize a SmartDashboard field for a robot number
  * 
- * 
  * @author Jake Backer
- * @version 	
-v.1.sleepy.1.0.ocean.1450230474.7
- 
- *
- *
- *
- *
+ * @version v.1.sleepy.1.0.ocean.1450230474.7
  */
 public class Switcher {
 	
-	/** Holds the value of the SmartDashboard field*/
+	/** 
+	 * Holds the value of the SmartDashboard field
+	 */
 	public int currentRobot;
 	
 	
-	/** Initializes the currentRobot field*/
+	/**
+	 * Initializes the currentRobot field
+	 */
 	public Switcher() {
 		try{
 		currentRobot = getRobot();
@@ -39,7 +36,9 @@ public class Switcher {
 		return currentRobot;
 	}
 	
-	/** Initializes the field on SmartDashboard TEMPORARY*/
+	/**
+	 * Initializes the field on SmartDashboard TEMPORARY
+	 */
 	public void initRobotNumber() {
 		SmartDashboard.putNumber("RobotNumber", 0); //TEMP
 	}	
